@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        fieldset{
+             margin-left: 450px;
+            padding-left: 15;
+            height: 1150px;
+            width: 400px;
+            border: 5px solid  rgb(163, 184, 91);
+            box-shadow: indigo;
+            background:linear-gradient(135eg,#71b7e6,#9b59b6) ;
+            background-color: rgba(253, 253, 248, 0.966);
+            text-align: center;
+             }
+
+
+         form{
+            text-align: left;
+         }
+         input:hover{
+            background-color: rgb(204, 110, 34);
+            border: 2px solid blue;
+            border-radius: 25px;
+         }
+         label{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         }
+         .btn:hover{
+            margin-top: 40px;
+         }
+        #address{
+         width: 400px;
+         height: 35px;
+         }
+     </style>
+
+
+</head>
+
+
+<body >
+    <fieldset>
+<form action="/action_page.php">
+   
+<h1> Job Application Form</h1>
+<h4>Please Fill Out the Form Below to Submit Your Job Application!</h4> <br>
+
+
+First Name:- <input type="text" name="fname" value="" id="fname"> <br>   <br>
+Last name:-   <input type="text" name="lname " id="lname"> <br> <br>
+
+
+Email Address <input type="email" name="email" value="" id="email"> <br> <br>
+Phone Number <input type="tel" name="tel" value="" id="tel" pattern="999 555 3242"> <br> <br>
+
+
+Select Your Gender  
+<select name="gender" id="gender">
+    <option   value="male" > male</option>
+    <option    value="female" >female</option>
+    <option   value="others">others</option>
+   
+</select>  <br> <br>
+
+
+ Date of Birth <input type="date" name="date" id="date"> <br> <br>
+
+
+ <div class="opt">
+ State :-
+<select name="state" id="state">
+    <option   value="mp" > Madhya Pradesh</option>
+    <option    value="gj" >Gujrat</option>
+    <option   value="jk">Jammu Kashmir</option>
+    <option   value="uch" > Arunachal Pradesh</option>
+    <option    value="ka" >Keral</option>
+    <option   value="rj">Rajasthan</option>
+    <option   value="bi" > Bihar</option>
+    <option    value="goa" >Goa</option>
+    <option   value="pun">Punjab</option>
+    <option   value="hr" > Himachal Pradesh</option>
+    <option    value="tamil" >Tamil Naidu</option>
+    <option   value="udisa">Odisha</option>
+    <option   value="w b" >West Bengal </option>
+    <option    value="mha" >Maharastra</option>
+    <option   value="chha">Chhattishgrha</option>
+    <option   value="jha" >Jharkhanda</option>
+    <option    value="mnipur" >Manipur</option>
+    <option   value="laddakh">Laddakha</option>
+    <option   value="tripura" > Tripura</option>
+    <option    value="uttra" >Uttar Pradesh</option>
+    <option   value="delhi">Delhi</option>
+    <option   value="uttr" > Utrakhandh</option>
+    <option    value="mijo" >Mijoram</option>
+    <option   value="telang">Telangana</option>
+</select>  <br> <br>
+
+
+</div>
+
+
+ Qualification
+ <select name="Qualification" id="Qualification">
+    <option value="Bsc.cs">Bsc.cs</option>
+    <option value="Btech.cs">Btech.cs</option>
+    <option value="BCA">BCA</option>
+    <option value="MCA">MCA</option>
+    <option value="Msc.cs">Msc.cs</option>
+    <option value="M.tech">M.tech</option>
+     <option value="cs diploma">cs Diploma</option>
+    <option value="other">others diploma</option>
+ </select>   <br>
+
+
+ 
+<p> Address </p>
+<textarea name="address " id="address" cols="" rows=""  height="50"></textarea> <br>
+
+
+
+
+<p id="demo">Currently are you working ?</p>
+<input type="radio" id="yes" name="favlanguage"  name="connect" value="yes">    
+<label for="yes" >Yes</label>    &nbsp;
+
+
+<input type="radio" id="no"  name="favlanguage" value="no" >  
+<label for="no">No</label>  <br> <br>
+
+
+
+
+ Currently working  position
+ <select name="job Position" id="job Position" name="connect">
+    <option value="frontend developer">Frontend developer</option>
+    <option value="Backend developer">Backend developer</option>
+    <option value="full stack developer">Full stack developer</option>
+    <option value="js developer">Java Script developer</option>
+    <option value="python developer">Python developer</option>
+    <option value="Java  developer">Java  developer</option>
+     <option value="software developer">Software developer</option>
+    <option value="other">Others</option>
+</select> <br> <br>
+
+
+ Applied Position
+ <select name="Position" id="Position">
+    <option value="frontend developer">Frontend developer</option>
+    <option value="Backend developer">Backend developer</option>
+    <option value="full stack developer">Full stack developer</option>
+    <option value="js developer">Java Script developer</option>
+    <option value="python developer">Python developer</option>
+    <option value="Java  developer">Java  developer</option>
+     <option value="software developer">Software developer</option>
+    <option value="other">Others</option>
+</select> <br> <br>
+
+
+<label for="birthdaytime"> Chose Interview  (date and time):</label>
+ <input type="datetime-local" id="birthdaytime" name="birthdaytime"> <br> <br>
+
+
+ <label for="myfile"  >  Please Upload your Cover letter here</label>
+  <input type="file" id="myfile" name="myfile" value="">  <br> <br>
+
+
+
+
+ <label for="resume" >Please Upload your Resume here</label>
+ <input type="file" id="resume" name="resume"> <br> <br>
+
+
+ 
+ <label for="other" > Please Upload Others Document</label>
+ <input type="file" id="other" name="other"> <br> <br>
+
+
+
+
+ <button class="btn" type="submit" value="submit">Submit </button>  &nbsp;
+
+
+ <button type="reset" value="reset">Reset</button> <br> <br>
+
+
+    <strong> &copy; Copyright & Privacy  Policy  </strong>
+   
+ <p> * We are an Equal Opportunity Emplo
+      yer and committed to excellence
+      through diversity to work in the
+      country where the job is based?
+      Are you currently legally entitled
+      What position are you applying for?
+      Have you worked for Company before?
+      I agree to terms & conditions. * </p>
+
+
+
+
+
+
+</form>
+</fieldset>
+</body>
+</html>
